@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="hbm2ddl.auto">create</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/hibernate</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">1234</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.dialect">org.hibernate.dialect.PostgreSQL92Dialect</property>
+        <property name="show_sql">true</property>
+
+        <mapping class="com.javatpoint.Person"/>
+        <mapping class="com.javatpoint.Address"/>
+
+<!--        <mapping class="com.javatpoint.Department"/>-->
+<!--        <mapping class="com.javatpoint.Employee"/>-->
+
+<!--        <mapping class="com.javatpoint.Question"/>-->
+<!--        <mapping class="com.javatpoint.Answer"></mapping>-->
+
+
+<!--        <mapping class="com.javatpoint.Alien"/>-->
+<!--        <mapping class="com.javatpoint.Laptop"/>-->
+
+    </session-factory>
+</hibernate-configuration>
